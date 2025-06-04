@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography Portfolio</title>
+
+    <!-- font google -->
+    <link href ="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel = "stylesheet"> 
+
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- font aweseome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      /* Menambahkan aturan untuk menghapus garis bawah pada semua tautan */
+      a {
+        text-decoration: none !important;
+      }
+
+      body {
+        background-color: #f8f9fb;
+        color: #333;
+      }
+
+      .header,
+      .bottom {
+        background-color: #f8f9fb;
+      }
+
+      .logo {
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+      }
+
+      .list {
+        font-weight: 600;
+        padding: 0.5rem 1.5rem;
+      }
+
+      .active1,
+      .active2 {
+        border: 1px solid #000;
+        border-radius: 8px;
+      }
+
+      .active2 {
+        border-radius: 20px;
+      }
+
+      .desc {
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #666;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .borders div {
+        position: fixed;
+        width: 90px;
+        height: 90px;
+        z-index: 9999;
+        pointer-events: none;
+        background-color: transparent;
+        border-color: #252525;
+        border-style: solid;
+      }
+
+      .brTR {
+        border-width: 15px 15px 0 0;
+        top: 0;
+        right: 0;
+      }
+
+      .brTL {
+        border-width: 15px 0 0 15px;
+        top: 0;
+        left: 0;
+      }
+
+      .brBL {
+        border-width: 0 0 15px 15px;
+        bottom: 0;
+        left: 0;
+      }
+
+      .brBR {
+        border-width: 0 15px 15px 0;
+        bottom: 0;
+        right: 0;
+      }
+
+      .icon {
+        color: #666;
+        font-size: 1.7rem;
+        padding: 0 0.5rem;
+      }
+
+      .img-container {
+        height: 200px;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        background-color: #ddd; /* Placeholder background */
+      }
+
+      .img-container::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      
+      /* Perbaikan untuk gambar */
+      .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Memastikan gambar mengisi container tanpa distorsi */
+        display: block;
+      }
+
+      /*costum heading styling*/
+      h2.fw-bold {
+        font-family : 'Playfair Display', serif;
+        font-weight : 700;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="d-flex align-items-center py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <h1 class="logo mb-0">JPhotography</h1>
+          </div>
+          <div class="col-md-8">
+            <nav class="d-flex justify-content-center justify-content-md-end">
+              <a class="list text-dark mx-2 active1" href="#">HOME</a>
+              <a class="list text-dark mx-2" href="#">ABOUT ME</a>
+              <a class="list text-dark mx-2" href="#">PORTFOLIO</a>
+              <a class="list text-dark mx-2" href="#">CONTACT</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-5 my-4">
+      <div class="container text-center">
+        <h2 class="fw-bold">Hi. Hello.. I Am JohnDas...!</h2>
+        <h2 class="fw-bold">
+          I Travel Around The World To Get The Best Photos..!
+        </h2>
+        <p class="desc mt-3">
+          AWARD WINNING PHOTOGRAPHER / CINEMATOGRAPHER / WRITER
+        </p>
+      </div>
+    </section>
+    
+    <!-- Border Elements -->
+    <div class="borders">
+      <div class="brTR"></div>
+      <div class="brTL"></div>
+      <div class="brBL"></div>
+      <div class="brBR"></div>
+    </div>
+
+    <!-- Portfolio Filter -->
+    <section class="py-4">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <a class="list text-dark mx-2 active2" href="#">All</a>
+          <a class="list text-dark mx-2" href="#">Landscape</a>
+          <a class="list text-dark mx-2" href="#">Potrait</a>
+          <a class="list text-dark mx-2" href="#">Product</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes1.jpg" alt="agnes1">
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes2.jpg" alt="agnes2">
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes3.jpg" alt="agnes3">
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes4.jpg" alt="agnes4">
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes5.jpg" alt="agnes5">
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes6.jpg" alt="agnes6">
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes7.jpg" alt="Agnes7">
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes8.jpg" alt="agnes8">
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes9.jpg" alt="agnes9">
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes10.jpg" alt="agnes10">
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes11.jpg" alt="agnes11">
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="img-container">
+              <img src="agnes12.jpg" alt="agnes12">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bottom py-5">
+      <div class="container text-center">
+        <h1 class="logo mb-3">JPhotography</h1>
+        <p>&copy; Copyrights 2019 All Rights Reserved</p>
+        <div class="mt-3">
+          <a href="#" class="icon"><i class="fa-brands fa-dribbble"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-behance"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-500px"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-flickr"></i></a>
+          <a href="#" class="icon"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
